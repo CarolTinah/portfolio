@@ -7,22 +7,34 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
         }
         header {
-            background: #0a2540;
+            background: #1D4ED8;
             color: #fff;
             padding: 60px 20px;
             text-align: center;
+            border-bottom: 5px solid #fff;
         }
         header h1 {
             margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: bold;
         }
         header p {
             font-size: 18px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        header a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 40px 20px;
@@ -30,17 +42,18 @@
             margin: auto;
         }
         h2 {
-            color: #0a2540;
+            color: #1D4ED8;
             margin-bottom: 15px;
+            font-size: 28px;
         }
         .skills span {
             display: inline-block;
-            background: #e0e7ff;
-            color: #0a2540;
-            padding: 8px 12px;
+            background: #E0E7FF;
+            color: #1D4ED8;
+            padding: 10px 20px;
             margin: 5px;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 16px;
         }
         .project, .job {
             background: #fff;
@@ -48,22 +61,50 @@
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        a {
-            color: #1d4ed8;
-            text-decoration: none;
+        .project:hover, .job:hover {
+            transform: scale(1.05);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-btn {
+            background: #1D4ED8;
+            color: #fff;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: #2563eb;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #0a2540;
+            background: #1D4ED8;
             color: #fff;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="https://placeimg.com/150/150/people" alt="Nanyondo Carol" class="profile-img">
     <h1>Nanyondo Carol</h1>
     <p>Software Engineer | IT Assistant | Web Developer</p>
     <p>Kampala, Uganda | 📧 caroltinah05@gmail.com</p>
@@ -76,10 +117,8 @@
 <section>
     <h2>About Me</h2>
     <p>
-        I am a highly motivated Software Engineering graduate from Makerere University,
-        currently working as an IT Assistant at Airserv Company Limited. I have hands-on
-        experience in IT support, networking, system setup, and website development using
-        WordPress and modern web technologies.
+        I am a Software Engineering graduate from Makerere University, currently working as an IT Assistant at Airserv Company Limited. 
+        I have hands-on experience in IT support, networking, system setup, and website development using WordPress and modern web technologies.
     </p>
 </section>
 
@@ -104,26 +143,17 @@
 
     <div class="job">
         <h3>IT Assistant – Airserv Company Limited</h3>
-        <p>
-            Set up office networks, configured routers and server rooms, provided IT
-            support and troubleshooting, and installed CCTV systems.
-        </p>
+        <p>Set up office networks, configured routers and server rooms, provided IT support, and installed CCTV systems.</p>
     </div>
 
     <div class="job">
         <h3>IT Support Engineer – Uganda Telecommunications Corporation Limited</h3>
-        <p>
-            Provided technical support to staff, worked with ticketing systems,
-            and developed a customer feedback web page.
-        </p>
+        <p>Provided technical support, worked with ticketing systems, and developed a customer feedback web page.</p>
     </div>
 
     <div class="job">
         <h3>Requirements Engineer – Makerere University</h3>
-        <p>
-            Gathered and documented system requirements, conducted interviews,
-            and assisted in test planning.
-        </p>
+        <p>Gathered and documented system requirements, conducted interviews, and assisted in test planning.</p>
     </div>
 </section>
 
@@ -150,22 +180,20 @@
 
     <div class="project">
         <h3>Meat Quality Inspection Mobile App</h3>
-        <p>Flutter mobile application using AI-based quality inspection.</p>
+        <p>Flutter mobile app using AI-based quality inspection.</p>
     </div>
 </section>
 
 <section>
     <h2>Education</h2>
-    <p>
-        <strong>Bachelor of Science in Software Engineering</strong><br>
-        Makerere University — CGPA: 4.3
-    </p>
+    <p><strong>Bachelor of Science in Software Engineering</strong><br>Makerere University — CGPA: 4.3</p>
 </section>
 
 <section>
     <h2>Contact</h2>
     <p>Email: caroltinah05@gmail.com</p>
     <p>Phone: +256 784 275 636</p>
+    <button class="contact-btn"><a href="mailto:caroltinah05@gmail.com" style="color:white;">Contact Me</a></button>
 </section>
 
 <footer>
@@ -174,4 +202,5 @@
 
 </body>
 </html>
+
 
